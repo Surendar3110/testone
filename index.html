@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Troubleshooting Documents</title>
+    <input type="text" id="searchInput" placeholder="Search issues..." style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 16px;" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-weight: 700;
+      color: #007acc;
+    }
+    article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    h2 {
+      color: #004080;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777;
+      font-size: 14px;
+    }
+    
+    .dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+.dark-mode article {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+.dark-mode input, .dark-mode button {
+  background-color: #333;
+  color: #eee;
+  border: none;
+}
+  </style>
+</head>
+
+<body>
+  <button id="darkModeToggle" style="margin-left:10px; padding: 10px;">Toggle Dark Mode</button>
+  <header>
+    <h1>Troubleshooting Documents</h1>
+    <p>Your quick reference for resolving IT issues.</p>
+  </header>
+
+  <article>
+    <h2>Issue: Contact Pad Status Not Updating in Edge Browser</h2>
+    <p><strong>Problem:</strong> Status was not visually updating in Vonage Contact Pad.</p>
+    <p><strong>Solution:</strong> Update Edge browser to latest version, then log out and log back in.</p>
+    <p><strong>Result:</strong> Status updates correctly after these steps.</p>
+  </article>
+
+  <article>
+    <h2>Issue: Call Routing Failure in Vonage</h2>
+    <p><strong>Problem:</strong> Calls not routed due to device busy status caused by headphone conflicts.</p>
+    <p><strong>Solution:</strong> Check user system settings related to device access and headphone use. Schedule session to update settings.</p>
+  </article>
+
+  <article>
+    <h2>Issue:Calls Are Landing on Mobile Instead of Vonage Contact Pad</h2>
+    <p><strong>Problem:</strong> Incoming calls are routed to the user’s mobile phone instead of being handled through the Vonage Contact Pad in Salesforce</p>
+    <p><strong>Solution:</strong> Check <strong>"Use Softphone" </strong> Setting <br><br>
+       1.	Open the Vonage Contact Pad in Salesforce.<br>
+          2.	Locate the "Use Softphone" option.<br>
+            3.	Ensure the checkbox is ticked (enabled).<br>
+      <br> o	✅ If "Use Softphone" is enabled: Calls will now route through the Vonage CP.
+      <br> o	❌ If not enabled: Enable it to ensure calls are received via the contact pad.</p>
+   <p><strong>Result:</strong> Status updates correctly after these steps.</p>
+      <p><strong>Additional Notes:</strong> <br>
+      •	Users must have proper browser permissions and pop-up settings enabled for Vonage CP to work correctly.<br>
+      •	Salesforce and Vonage may occasionally require re-authentication after updates or cache clears.</p>
+  </article>
+  
+  
+  
+  
+    <article>
+    <h2>Issue: Analyze Agent Logged-in Status and Call CDR Reports</h2>
+    <p><strong>Problem:</strong> Need to analyze the agent’s logged-in status and call CDR (Call Detail Records) reports.</p>
+    <p><strong>Solution:</strong><br>
+    1.	Log in to the Vonage Portal.<br><br>
+    2.	Navigate to the following dashboards to verify agent status and call data:<br>
+    o	Call Analysis with Call GUID<br>
+    o	Agent Performance – Agent Timelines<br>
+    o	Delivery failures summary<br><br>
+   3.	Use these dashboards to review agent activity, call details, and performance metrics.<br>
+</p>
+    <p><strong>Result:</strong> Status updates correctly after these steps.</p>
+  </article>
+  
+  
+  
+  
+  
+  
+  
+  <footer>
+    &copy; 2025 IT Team Documentation
+  </footer>
+</body>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const articles = document.querySelectorAll('article');
+
+    articles.forEach(article => {
+      const text = article.textContent.toLowerCase();
+      if (text.includes(filter)) {
+        article.style.display = '';
+      } else {
+        article.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+<script>
+  const toggleBtn = document.getElementById('darkModeToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+
+
+
+
+</html>
 
