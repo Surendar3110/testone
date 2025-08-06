@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 3000px;
+  background: linear-gradient(white, #f0f0f0);
+}
+
+.scroll-error {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-weight: bold;
+  z-index: 9999;
+  display: none;
+  opacity: 0.9;
+}
+
+.scroll-error.top {
+  top: 0;
+}
+
+.scroll-error.bottom {
+  bottom: 0;
+}
+
+.filler {
+  height: 2500px;
+}
