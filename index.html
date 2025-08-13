@@ -6,73 +6,22 @@
   <title>Troubleshooting Documents</title>
     <input type="text" id="searchInput" placeholder="Search issues..." style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 16px;" />
 
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      \\max-width: 900px;
-	    max-width: 1500px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    h1 {
-      font-weight: 700;
-      color: #007acc;
-    }
-    article {
-      background: white;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      border-radius: 6px;
-    }
-    h2 {
-      color: #004080;
-    }
-    pre {
-      background: #eee;
-      padding: 10px;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      color: #777;
-      font-size: 14px;
-    }
     
-    .dark-mode {
-  background-color: #121212;
-  color: #eee;
-}
-.dark-mode article {
-  background-color: #1e1e1e;
-  box-shadow: none;
-}
-.dark-mode input, .dark-mode button {
-  background-color: #333;
-  color: #eee;
-  border: none;
-}
-
-	  
-  </style>
+     <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+      <button id="darkModeToggle" style="margin-left:10px; padding: 10px;">Toggle Dark Mode</button>
+      	   <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </head>
 
 <body>
-	
-  <button id="darkModeToggle" style="margin-left:10px; padding: 10px;">Toggle Dark Mode</button>
+  
   <header>
     <h1>Troubleshooting Documents</h1>
     <p>Your quick reference for resolving IT issues.</p>
   </header>
+	
 	
   <article>
     <h2>Issue: Contact Pad Status Not Updating in Edge Browser</h2>
@@ -110,8 +59,7 @@ Check and update your browser to the latest version (recommended: Chrome, Edge, 
   </article>
   
   
-  
-  
+
     <article>
     <h2>Issue: Analyze Agent Logged-in Status and Call CDR Reports</h2>
     <p><strong>Problem:</strong> Need to analyze the agent’s logged-in status and call CDR (Call Detail Records) reports.</p>
@@ -223,10 +171,9 @@ ______________________________________________________________________<br><br>
 We have checked in the Vonage portal and could not find a user account associated with your email address emailaddress@zf.com.<br><br>
 If you would like to create a new user login, please obtain approval from your manager so we can proceed with the account creation.<br><br>
 
-#account not created
+#account not created<br>
 ______________________________________________________________________<br><br>
 
-	
 </p>
   </article> 
 
@@ -237,32 +184,32 @@ ______________________________________________________________________<br><br>
   </footer>
 </body>
 
-<script>
-  const searchInput = document.getElementById('searchInput');
-  searchInput.addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
-    const articles = document.querySelectorAll('article');
-
-    articles.forEach(article => {
-      const text = article.textContent.toLowerCase();
-      if (text.includes(filter)) {
-        article.style.display = '';
-      } else {
-        article.style.display = 'none';
-      }
-    });
-  });
-</script>
-
-<script>
-  const toggleBtn = document.getElementById('darkModeToggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
-
-
-
-
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
