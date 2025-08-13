@@ -1,32 +1,53 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  height: 3000px;
-  background: linear-gradient(white, #f0f0f0);
+ body {
+      font-family: Arial, sans-serif;
+      \\max-width: 900px;
+	    max-width: 1500px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-weight: 700;
+      color: #007acc;
+    }
+    article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    h2 {
+      color: #004080;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777;
+      font-size: 14px;
+    }
+    
+    .dark-mode {
+  background-color: #121212;
+  color: #eee;
 }
-
-.scroll-error {
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  color: white;
-  background-color: red;
-  text-align: center;
-  font-weight: bold;
-  z-index: 9999;
-  display: none;
-  opacity: 0.9;
+.dark-mode article {
+  background-color: #1e1e1e;
+  box-shadow: none;
 }
-
-.scroll-error.top {
-  top: 0;
-}
-
-.scroll-error.bottom {
-  bottom: 0;
-}
-
-.filler {
-  height: 2500px;
+.dark-mode input, .dark-mode button {
+  background-color: #333;
+  color: #eee;
+  border: none;
 }
