@@ -1,4 +1,4 @@
- body {
+{
       font-family: Arial, sans-serif;
       \\max-width: 900px;
 	    max-width: 1500px;
@@ -53,12 +53,8 @@
 }
 
 
-
-
-
-
-
-#darkModeToggle {
+#darkModeToggle 
+{
     padding: 12px 24px;
     margin-left: 10px;
     background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88, #ff6a88, #f65b74);
