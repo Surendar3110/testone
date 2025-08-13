@@ -51,3 +51,41 @@
   color: #eee;
   border: none;
 }
+
+
+
+
+
+
+
+#darkModeToggle {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88, #ff6a88, #f65b74);
+    background-size: 300% 300%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+    transition: all 0.4s ease;
+    animation: gradientMove 4s infinite;
+}
+
+#darkModeToggle:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 105, 135, 0.6);
+}
+
+#darkModeToggle:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* Animated gradient background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
