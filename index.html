@@ -180,6 +180,42 @@ ______________________________________________________________________<br><br>
   </article> 
 
 
+    <article>
+    <h2>Issue:i want this split into rows how? can i?</h2>
+    <p>Yes ✅ You can split these values (which are currently stacked in a single cell block) into individual rows.
+
+✅ Method: Use Excel Power Query (Best for this kind of task)
+1️⃣ Select Your Data Range
+
+Select the column containing the stacked group numbers (e.g., Column Q in your screenshot).
+
+2️⃣ Load Data into Power Query
+
+Go to Data → From Table/Range (ensure your data is in a Table format; if not, Excel will prompt to create one).
+
+3️⃣ Transform the Data
+
+In Power Query Editor:
+
+If multiple group numbers are separated by line breaks (Alt+Enter), select the column →
+Go to Transform → Split Column → By Delimiter →
+Select Custom delimiter → Press Ctrl+J (this represents line breaks).
+
+This will split the data into multiple columns.
+
+4️⃣ Unpivot Columns
+
+Select the new columns →
+Go to Transform → Unpivot Columns →
+This will list all group numbers into individual rows.
+
+5️⃣ Close & Load
+
+Click Close & Load → Data will be placed back into your Excel sheet as rows.<br>
+</p>
+    <p><strong>Result:</strong> Status updates correctly after these steps.</p>
+  </article>
+
 	
   <footer>
     &copy; 2025 IT Team Documentation
