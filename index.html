@@ -181,39 +181,39 @@ ______________________________________________________________________<br><br>
 
 
     <article>
-    <h2>Issue:i want this split into rows how? can i?</h2>
-    <p>Yes ✅ You can split these values (which are currently stacked in a single cell block) into individual rows.
+     <h2>Issue</h2>
+  <p>I want this split into rows. How can I?</p>
+  <h2>Solution</h2>
+  <p><strong>Yes ✅</strong> You can split these values (which are currently stacked in a single cell block) into individual rows.</p>
 
-✅ Method: Use Excel Power Query (Best for this kind of task)
-1️⃣ Select Your Data Range
+  <h3>✅ Method: Use Excel Power Query (Best for this kind of task)</h3>
 
-Select the column containing the stacked group numbers (e.g., Column Q in your screenshot).
+  <div class="step">
+    <strong>1️⃣ Select Your Data Range</strong><br>
+    Select the column containing the stacked group numbers (e.g., Column Q in your screenshot).
+  </div>
 
-2️⃣ Load Data into Power Query
+  <div class="step">
+    <strong>2️⃣ Load Data into Power Query</strong><br>
+    Go to <em>Data → From Table/Range</em> (ensure your data is in a Table format; if not, Excel will prompt to create one).
+  </div>
 
-Go to Data → From Table/Range (ensure your data is in a Table format; if not, Excel will prompt to create one).
+  <div class="step">
+    <strong>3️⃣ Transform the Data</strong><br>
+    In Power Query Editor:<br>
+    If multiple group numbers are separated by line breaks (Alt+Enter), select the column → Go to <em>Transform → Split Column → By Delimiter</em> → Select <em>Custom delimiter</em> → Press <strong>Ctrl+J</strong> (this represents line breaks).<br>
+    This will split the data into multiple columns.
+  </div>
 
-3️⃣ Transform the Data
+  <div class="step">
+    <strong>4️⃣ Unpivot Columns</strong><br>
+    Select the new columns → Go to <em>Transform → Unpivot Columns</em> → This will list all group numbers into individual rows.
+  </div>
 
-In Power Query Editor:
-
-If multiple group numbers are separated by line breaks (Alt+Enter), select the column →
-Go to Transform → Split Column → By Delimiter →
-Select Custom delimiter → Press Ctrl+J (this represents line breaks).
-
-This will split the data into multiple columns.
-
-4️⃣ Unpivot Columns
-
-Select the new columns →
-Go to Transform → Unpivot Columns →
-This will list all group numbers into individual rows.
-
-5️⃣ Close & Load
-
-Click Close & Load → Data will be placed back into your Excel sheet as rows.<br>
-</p>
-    <p><strong>Result:</strong> Status updates correctly after these steps.</p>
+  <div class="step">
+    <strong>5️⃣ Close &amp; Load</strong><br>
+    Click <em>Close &amp; Load</em> → Data will be placed back into your Excel sheet as rows.
+  </div>
   </article>
 
 	
